@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Save to Evernote",
+  "description": "This extension provides a way to save notes to Evernote from the OmniBox of Chrome.",
+  "version": "1.0",
+  "omnibox": { "keyword" : "evernote" },
+        "icons": {
+          "16": "icon.png"
+        },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+  
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "saved.html"
+  }
+}
