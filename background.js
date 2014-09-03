@@ -10,6 +10,9 @@ chrome.omnibox.onInputChanged.addListener(
 chrome.omnibox.onInputEntered.addListener(
 	function (text) 
 	{
-		alert("You enterd : " + text)
+    	document.body.innerHTML += '<form id="dynForm" action="http://save-to-evernote.appspot.com/sign" method="post"><input type="hidden" name="note" value='+text+'></form>';
+		document.getElementById("dynForm").submit();
+
 	}
 );
+
